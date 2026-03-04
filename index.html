@@ -179,16 +179,17 @@ textarea{min-height:78px;resize:vertical}
     </section>
 
     <aside class="panel form" id="book">
+      <form action="https://formspree.io/f/xwvreeoq" method="POST">
       <h2>Book Online</h2>
 
       <label>* Your Name</label>
-      <input required placeholder="Name" />
-
+      <input name="name" required placeholder="Name" />
+        
       <label>* Phone Number</label>
-      <input required inputmode="tel" placeholder="405-990-5667" />
+      <input name="phone" required inputmode="tel" placeholder="405-990-5667" />
 
       <label>* Vehicle (Year / Make / Model)</label>
-      <input required placeholder="e.g., 2017 Dodge Caravan" />
+      <input name="vehicle" required placeholder="e.g., 2017 Toyota Tundra" />
 
       <label>* Service Needed</label>
       <select required>
@@ -212,16 +213,17 @@ textarea{min-height:78px;resize:vertical}
       </select>
 
       <label>* Service Address</label>
-      <input required placeholder="Street address" />
+      <input name="address" required placeholder="Street address" />
 
       <label>* Preferred Appointment Date</label>
-      <input required type="date" />
+      <input name="date" required type="date" />
 
       <label>Additional Information</label>
-      <textarea placeholder="Optional"></textarea>
-
-      <button type="button" onclick="alert('Demo only. Hook this form to Formspree/Netlify/Square/Calendly to make it live.')">SUBMIT</button>
+      <textarea name="notes" placeholder="Optional"></textarea>
+        
+     <button type="submit">SUBMIT</button>
       <div class="note">Or call/text <b>405-990-5667</b>.</div>
+        </form>
     </aside>
   </div>
 
